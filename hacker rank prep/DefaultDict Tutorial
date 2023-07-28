@@ -1,0 +1,15 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+if __name__ == '__main__':
+    from collections import defaultdict
+    li=list(map(int,input().split()))
+    A=defaultdict(list)
+    for i in range(li[0]):
+        
+        A[input()].append(i+1)
+    for j in range(li[1]):
+        x=input()
+        if x in A.keys():
+            for k in A[x]:
+                 print(k,end=" ")
+            print()
+        else: print(-1)

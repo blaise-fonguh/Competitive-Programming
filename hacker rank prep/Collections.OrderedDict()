@@ -1,0 +1,13 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+if __name__ == '__main__':
+    from collections import OrderedDict
+    b=int(input())
+    A={}
+    for i in range(b):
+            x = input().split()
+            xn = " ".join(x[:-1])
+            xp = int(x[-1])
+            if xn in A.keys():
+                A[xn]+=xp
+            else: A[xn]=xp
+    for i in A: print(i, A[i])

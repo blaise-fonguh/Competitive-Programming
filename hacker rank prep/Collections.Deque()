@@ -1,0 +1,12 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+if __name__ == '__main__':
+    from collections import deque
+    A=deque()
+    b=int(input())
+    for i in range(b):
+        x=input().split()
+        if x[0] == 'appendleft': A.appendleft(x[1])
+        elif x[0] == 'append': A.append(x[1])
+        elif x[0] == 'popleft': A.popleft()
+        elif x[0] == 'pop': A.pop()
+    for k in A: print(k, end=' ')

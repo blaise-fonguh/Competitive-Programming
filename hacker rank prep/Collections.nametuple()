@@ -1,0 +1,11 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+if __name__ == '__main__':
+    from collections import namedtuple
+    a= int(input())
+    av=','.join(input().split())
+    sh = namedtuple('sh', av)
+    sum=0
+    for i in range(a):
+        x=sh(*(input().split()))
+        sum+=int(x.MARKS)
+    print(sum/a)

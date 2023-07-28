@@ -1,0 +1,7 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+if __name__ == '__main__':
+    from itertools import permutations
+    A,e=input().split()
+    w= list(permutations(A,int(e)))
+    w.sort()
+    for i in w: print(*i,sep='')
